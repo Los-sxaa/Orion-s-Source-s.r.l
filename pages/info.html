@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>MENU ORION</title>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+<style>
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(122, 212, 253);
+    background-image: url("img/bg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    font-family: "Times New Roman", serif;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255,255,255,0.65);
+    backdrop-filter: blur(2px);
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+
+h2 {
+    font-size: 42px;
+    letter-spacing: 2px;
+    margin: 0 0 30px 0;
+    color: #1b2a4a;
+}
+
+.w3-button {
+    background: #1b2a4a !important;
+    color: white !important;
+    padding: 14px 24px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.w3-button:hover {
+    background: #324a7a !important;
+    transform: scale(1.03);
+}
+
+
+.w3-dropdown-content {
+    border-radius: 12px;
+    overflow: hidden;
+    min-width: 260px;
+}
+
+
+#myInput {
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.w3-bar-item {
+    font-size: 18px;
+    padding: 14px;
+    transition: 0.2s;
+}
+
+.w3-bar-item:hover {
+    background: #e8eefc !important;
+}
+
+
+.info {
+    margin-top: 40px;
+    font-size: 20px;
+    max-width: 500px;
+    line-height: 1.5;
+    color: #1b2a4a;
+    position: relative;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>INFORMAZIONI AGGIUNTIVE</h2>
+
+    <div class="w3-dropdown-hover">
+        <button class="w3-button">Menù</button>
+
+        <div class="w3-dropdown-content w3-bar-block w3-card w3-light-grey" id="myDIV">
+
+            <input class="w3-input w3-padding"
+                   type="text"
+                   placeholder="Cerca..."
+                   id="myInput"
+                   onkeyup="myFunction()">
+
+            <a class="w3-bar-item w3-button" href="chisiamo.html">Chi Siamo</a>
+            <a class="w3-bar-item w3-button" href="limited_edition.html">Collezione Limited Edition</a>
+            <a class="w3-bar-item w3-button" href="love_collection.html">Love Collection</a>
+            <a class="w3-bar-item w3-button" href="ordini.html">Ordini su commissione</a>
+            <a class="w3-bar-item w3-button" href="cookie.html">Cookie Policy</a>
+        </div>
+    </div>
+
+    <div class="info">
+        <p>
+            Le informazioni presenti nel menù sono disponibili anche nella home del sito,
+            cliccando sui link proposti.
+        </p>
+    </div>
+
+</div>
+
+<script>
+function myFunction() {
+    var input = document.getElementById("myInput");
+    var filter = input.value.toUpperCase();
+    var div = document.getElementById("myDIV");
+    var a = div.getElementsByTagName("a");
+
+    for (var i = 0; i < a.length; i++) {
+        var txtValue = a[i].textContent || a[i].innerText;
+        a[i].style.display = txtValue.toUpperCase().indexOf(filter) > -1 ? "" : "none";
+    }
+}
+</script>
+
+</body>
+</html>

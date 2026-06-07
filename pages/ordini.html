@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ORDINI ORION</title>
+
+<style>
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+
+    background-image: url("../img/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: "Times New Roman";
+}
+
+/* LATO SINISTRO TITOLO */
+.left {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: darkblue;
+    font-size: 60px;
+    text-align: center;
+    padding: 40px;
+}
+
+/* LATO FORM */
+.right {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FORM VERO STYLE */
+form {
+    width: 70%;
+}
+
+/* LABEL MINIMAL */
+label {
+    display: block;
+    font-size: 18px;
+    margin-top: 15px;
+    color: darkblue;
+}
+
+/* INPUT MINIMAL LUXURY */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+
+    font-size: 18px;
+    font-family: "Times New Roman";
+
+    border: none;
+    border-bottom: 2px solid darkblue;
+
+    background: transparent;
+    outline: none;
+
+    color: black;
+}
+
+/* FOCUS EFFETTO LINEA */
+input:focus, textarea:focus {
+    border-bottom: 2px solid rgb(0, 200, 255);
+}
+
+/* TEXTAREA */
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* BUTTON MINIMAL LUSSO */
+button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+
+    background: darkblue;
+    color: white;
+
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: rgb(30, 80, 160);
+    letter-spacing: 1px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="left">
+    ORDINI<br>ORION
+</div>
+
+<div class="right">
+
+<form>
+    <label>Nome</label>
+    <input type="text">
+
+    <label>Cognome</label>
+    <input type="text">
+
+    <label>Email</label>
+    <input type="email">
+
+    <label>Data preferibile di arrivo</label>
+    <input type="date">
+
+    <label>Descrizione ordine</label>
+    <textarea></textarea>
+
+    <button type="submit">Invia ordine</button>
+</form>
+
+</div>
+
+</body>
+</html>

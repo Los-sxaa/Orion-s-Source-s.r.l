@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<title>I TUOI ORDINI</title>
+
+<style>
+
+/* ===== BASE ===== */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("../img/bg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Times New Roman", serif;
+    color: #0b1a3a;
+}
+
+/* overlay elegante */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at 0% 0%,
+        rgba(255,255,255,0.45),
+        rgba(0,0,0,0.35)
+    );
+    pointer-events: none;
+    background: radial-gradient(circle at 0% 0%, rgba(255,255,255,0.75), rgba(0,0,0,0.55));
+}
+
+/* ===== TITOLO ===== */
+h1 {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 70px;
+    color: darkblue;
+    letter-spacing: 2px;
+}
+
+h1::after {
+    content: "Wishlist Privata";
+    display: block;
+    font-size: 16px;
+    margin-top: 5px;
+    letter-spacing: 6px;
+    color: rgba(0,0,0,0.6);
+}
+
+/* ===== WRAPPER ===== */
+.contenuto-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+/* ===== LISTA ===== */
+.carrello-wrapper {
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* ===== CARD ===== */
+.carrello-item {
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.65);
+    backdrop-filter: blur(12px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.carrello-item:hover {
+    transform: translateY(-6px);
+}
+
+.carrello-item:hover::before {
+    opacity: 1;
+}
+
+/* ===== IMMAGINE ===== */
+.carrello-item img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* ===== INFO ===== */
+.info {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.info b {
+    font-size: 20px;
+}
+
+/* ===== BOTTONI ===== */
+.btn-elimina,
+.btn-acquista {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Times New Roman";
+    transition: 0.25s;
+    margin-left: 10px;
+}
+
+/* elimina */
+.btn-elimina {
+    background: darkred;
+    color: white;
+}
+
+.btn-elimina:hover {
+    transform: scale(1.08);
+    background: red;
+}
+
+/* acquista */
+.btn-acquista {
+    background: darkblue;
+    color: white;
+}
+
+.btn-acquista:hover {
+    transform: scale(1.08);
+    background: blue;
+}
+
+/* ===== TOTALE ===== */
+.totale {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 18px;
+
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(15px);
+
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: darkblue;
+
+    box-shadow: 0 -10px 30px rgba(0,0,0,0.2);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="contenuto-wrapper">
+    <h1>I TUOI ORDINI</h1>
+    <div class="carrello-wrapper" id="carrello-container"></div>
+</div>
+
+<div class="totale" id="totale"></div>
+
+<script>
+
+const carrelloContainer = document.getElementById("carrello-container");
+const totaleEl = document.getElementById("totale");
+
+let carrello = JSON.parse(localStorage.getItem("carrello")) || [];
+
+function aggiornaCarrello() {
+
+    carrelloContainer.innerHTML = "";
+    let totale = 0;
+
+    carrello.forEach((prod, index) => {
+
+        const prezzoNum = Number(prod.prezzo) || 0;
+        totale += prezzoNum;
+
+        const div = document.createElement("div");
+        div.className = "carrello-item";
+
+        div.innerHTML = `
+            <img src="${prod.img}" alt="${prod.nome}">
+
+            <div class="info">
+                <b>${prod.nome}</b><br>
+                €${prezzoNum.toLocaleString('it-IT', {minimumFractionDigits: 2})}
+            </div>
+
+            <button class="btn-elimina">Rimuovi</button>
+            <button class="btn-acquista">Acquista</button>
+        `;
+
+        // EVENTI SICURI
+        div.querySelector(".btn-elimina").addEventListener("click", () => {
+            rimuoviProdotto(index);
+        });
+
+        div.querySelector(".btn-acquista").addEventListener("click", () => {
+            acquistaProdotto(index);
+        });
+
+        carrelloContainer.appendChild(div);
+    });
+
+    totaleEl.innerText =
+        "Totale ordine: €" +
+        totale.toLocaleString('it-IT', {minimumFractionDigits: 2});
+}
+
+function rimuoviProdotto(index) {
+    carrello.splice(index, 1);
+    localStorage.setItem("carrello", JSON.stringify(carrello));
+    aggiornaCarrello();
+}
+
+function acquistaProdotto(index) {
+    const prodotto = carrello[index];
+    alert("Ordine confermato: " + prodotto.nome);
+
+    carrello.splice(index, 1);
+    localStorage.setItem("carrello", JSON.stringify(carrello));
+    aggiornaCarrello();
+}
+
+aggiornaCarrello();
+
+</script>
+
+</body>
+</html>

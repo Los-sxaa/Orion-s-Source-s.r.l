@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BRACCIALI ORION</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    color: darkblue;
+
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* TITOLO */
+.title {
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 90px;
+    color: darkblue;
+    font-family: "Edwardian Script ITC";
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+/* GRID GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    padding: 50px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* CARD */
+.photo {
+    text-align: center;
+    cursor: pointer;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(6px);
+    border-radius: 18px;
+    padding: 15px;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.photo:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* NOME PRODOTTO */
+.nome {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding-bottom: 6px;
+}
+
+/* IMMAGINI */
+.photo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.photo img:hover {
+    transform: scale(1.05);
+}
+
+/* PREZZO */
+.photo p {
+    margin-top: 10px;
+    font-size: 16px;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    padding-top: 6px;
+}
+
+/* LINK RESET */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="title">
+    <h1>Orion's Source</h1>
+</div>
+
+<div class="gallery">
+    <div class="photo">
+        <div class="nome">BRACCIALE CHAIN</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20CHAIN&prezzo=100%2C00&img=../img/bracciale1.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EAcciaio%20inox%20argentato%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ES%2C%20M%2C%20L%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EBracciale%20a%20catena%20dal%20design%20moderno%20e%20deciso%2C%20perfetto%20per%20un%20look%20casual%20o%20elegante.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">
+                <img src="../img/bracciale1.jpg" alt="BRACCIALE CHAIN">
+            </a>
+            <p>100,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">BRACCIALE EXAGON</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20EXAGON&prezzo=50%2C00&img=../img/bracciale2.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EAcciaio%20inox%20argentato%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EBracciale%20minimalista%20con%20finitura%20esagonale%2C%20ideale%20per%20chi%20ama%20uno%20stile%20essenziale.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">
+                <img src="../img/bracciale2.jpg" alt="BRACCIALE EXAGON">
+            </a>
+            <p>50,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">BRACCIALE VINES</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20VINES&prezzo=75%2C00&img=../img/bracciale3.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3ELega%20metallica%20placcata%20oro%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3EM%2C%20L%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EBracciale%20ispirato%20alla%20natura%20con%20motivi%20di%20foglie%20avvolgenti%20e%20raffinati.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">                
+                <img src="../img/bracciale3.jpg" alt="BRACCIALE VINES ">
+            </a>
+            <p>75,00€</p>
+        </div>
+
+        <div class="photo">
+        <div class="nome">BRACCIALE PEACE</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20PEACE&prezzo=100%2C00&img=../img/bracciale5.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOttone%20placcato%20oro%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EElegante%20bracciale%20rigido%20con%20decorazione%20a%20ramo%20e%20foglie%20luminose.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">
+                <img src="../img/bracciale5.jpg" alt="BRACCIALE PEACE">
+            </a>
+            <p>100,00€</p>
+        </div>
+
+        <div class="photo">
+        <div class="nome">BRACCIALE HONOR</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20HONOR&prezzo=175%2C00&img=../img/bracciale4.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EArgento%20925%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ES%2C%20M%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EBracciale%20raffinato%20con%20piccoli%20rami%20decorativi%20e%20dettagli%20luminosi.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">
+                <img src="../img/bracciale4.jpg" alt="BRACCIALE HONOR">
+            </a>
+            <p>175,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">BRACCIALE STAR</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20STAR&prezzo=100%2C00&img=../img/bracciale6.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20placcato%2018K%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EDelicato%20bracciale%20con%20piccole%20stelle%20luminose%20distribuite%20lungo%20la%20catena.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">
+                <img src="../img/bracciale6.jpg" alt="BRACCIALE STAR">
+            </a>
+            <p>100,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">BRACCIALE SLAVE INDIA</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20SLAVE%20INDIA&prezzo=160%2C00&img=../img/bracciale7.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20placcato%20e%20zirconi%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ES%2C%20M%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3ESlave%20bracelet%20elegante%20con%20catena%20centrale%20e%20dettagli%20brillanti%20ispirati%20alla%20gioielleria%20orientale.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">                
+                <img src="../img/bracciale7.jpg" alt=" BRACCIALE SLAVE INDIA">
+            </a>
+            <p>160,00€</p>
+        </div>
+
+    <div class="photo">
+        <div class="nome">BRACCIALE SLAVE PRECIOUS</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20SLAVE%20PRECIOUS&prezzo=200%2C00&img=../img/bracciale8.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20placcato%20e%20cristalli%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3EM%2C%20L%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3ESlave%20bracelet%20di%20grande%20impatto%20visivo%2C%20impreziosito%20da%20pendenti%20luminosi%20e%20linee%20eleganti.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">
+                <img src="../img/bracciale8.jpg" alt="BRACCIALE SLAVE PRECIOUS">
+            </a>
+            <p>200,00€</p>
+        </div>
+        
+        <div class="photo">
+        <div class="nome">BRACCIALE SLAVE LEAVES</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20SLAVE%20LEAVES&prezzo=125%2C00&img=../img/bracciale9.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20placcato%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3ESlave%20bracelet%20ispirato%20alla%20natura%20con%20foglie%20stilizzate%20e%20catene%20sottili%20ed%20eleganti.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">
+                <img src="../img/bracciale9.jpg" alt="BRACCIALE SLAVE LEAVES">
+            </a>
+            <p>125,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">BRACCIALE SNAKE</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20SNAKE&prezzo=50%2C00&img=../img/bracciale10.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3ELega%20metallica%20bronzo%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ES%2C%20M%2C%20L%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOriginale%20bracciale%20serpente%20avvolgente%20dal%20design%20grintoso%20e%20contemporaneo.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">
+                <img src="../img/bracciale10.jpg" alt="BRACCIALE SNAKE">
+            </a>
+            <p>50,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">BRACCIALE SUN & MOON</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20SUN%20%26%20MOON&prezzo=180%2C00&img=../img/bracciale11.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EArgento%20925%20placcato%20oro%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EBracciale%20da%20braccio%20ispirato%20agli%20astri%2C%20con%20dettagli%20sole%20e%20luna%20che%20simboleggiano%20equilibrio%20e%20armonia.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">                
+                <img src="../img/bracciale11.jpg" alt="BRACCIALE SUN & MOON">
+            </a>
+            <p>180,00€</p>
+        </div>
+
+        <div class="photo">
+        <div class="nome">BRACCIALE BEAUTIFUL</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20BEAUTIFUL&prezzo=150%2C00&img=../img/bracciale12.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20placcato%2018K%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ES%2C%20M%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EBracciale%20elegante%20con%20catene%20sottili%20e%20pendenti%20luminosi%2C%20perfetto%20per%20occasioni%20speciali.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">
+                <img src="../img/bracciale12.jpg" alt="BRACCIALE BEAUTIFUL">
+            </a>
+            <p>150,00€</p>
+        </div>
+
+        <div class="photo">
+        <div class="nome">BRACCIALE TIARA</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20TIARA&prezzo=175%2C00&img=../img/bracciale13.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EArgento%20925%20con%20cristalli%20verdi%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ES%2C%20M%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EBracciale%20dal%20design%20regale%20con%20intrecci%20raffinati%20e%20pietre%20verde%20smeraldo.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">
+                <img src="../img/bracciale13.jpg" alt="BRACCIALE TIARA">
+            </a>
+            <p>175,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">BRACCIALE BRIDE</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20BRIDE&prezzo=200%2C00&img=../img/bracciale14.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20placcato%20e%20zirconi%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ES%2C%20M%2C%20L%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EBracciale%20sofisticato%20pensato%20per%20cerimonie%20ed%20eventi%20eleganti%2C%20con%20dettagli%20brillanti.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">
+                <img src="../img/bracciale14.jpg" alt="BRACCIALE BRIDE">
+            </a>
+            <p>200,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">BRACCIALE PEARLS</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20PEARLS&prezzo=50%2C00&img=../img/bracciale15.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20placcato%20e%20perle%20sintetiche%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EBracciale%20delicato%20con%20piccole%20perle%20pendenti%20che%20donano%20movimento%20e%20luminosit%C3%A0.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">                
+                <img src="../img/bracciale15.jpg" alt="BRACCIALE PEARLS">
+            </a>
+            <p>50,00€</p>
+        </div>
+
+        <div class="photo">
+        <div class="nome">BRACCIALE DROPS</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20DROPS&prezzo=120%2C00&img=../img/bracciale16.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20placcato%20e%20pietre%20naturali%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3EM%2C%20L%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EBracciale%20raffinato%20con%20gocce%20di%20pietra%20verde%20e%20blu%20che%20creano%20un%20effetto%20elegante%20e%20luminoso.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">
+                <img src="../img/bracciale16.jpg" alt="BRACCIALE DROPS">
+            </a>
+            <p>120,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">BRACCIALE SIMPLY CHIC</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20SIMPLY%20CHIC&prezzo=90%2C00&img=../img/bracciale17.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20placcato%2018K%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EBracciale%20minimal%20ed%20elegante%20con%20linee%20pulite%2C%20ideale%20da%20indossare%20ogni%20giorno.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">                
+                <img src="../img/bracciale17.jpg" alt="BRACCIALE SIMPLY CHIC">
+            </a>
+            <p>90,00€</p>
+        </div>
+
+        <div class="photo">
+        <div class="nome">BRACCIALE BANGLES</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20BANGLES&prezzo=110%2C00&img=../img/bracciale18.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20placcato%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ES%2C%20M%2C%20L%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3ESet%20di%20bracciali%20rigidi%20sovrapponibili%20dal%20fascino%20classico%20e%20senza%20tempo.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">
+                <img src="../img/bracciale18.jpg" alt="BRACCIALE BANGLES">
+            </a>
+            <p>110,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">BRACCIALE BLACK PEARL</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20BLACK%20PEARL&prezzo=60%2C00&img=../img/bracciale19.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EPietre%20nere%20naturali%20e%20acciaio%20inox%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ES%2C%20M%2C%20L%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EBracciale%20con%20perle%20nere%20dal%20look%20moderno%20e%20versatile%2C%20perfetto%20sia%20per%20uomo%20che%20per%20donna.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">                
+                <img src="../img/bracciale19.jpg" alt="BRACCIALE BLACK PEARL">
+            </a>
+            <p>60,00€</p>
+        </div>
+
+        <div class="photo">
+        <div class="nome">BRACCIALE MALOCCHIO</div>
+            <a href="../pages/bracciale_prod.html?nome=BRACCIALE%20MALOCCHIO&prezzo=80%2C00&img=../img/bracciale20.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EAcciaio%20inox%20argentato%20e%20ciondolo%20portafortuna%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%20all'acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EBracciale%20ispirato%20al%20simbolo%20del%20malocchio%2C%20elegante%20e%20ricco%20di%20significato%20protettivo.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20lavorativi.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">
+                <img src="../img/bracciale20.jpg" alt="BRACCIALE MALOCCHIO">
+            </a>
+            <p>80,00€</p>
+        </div>
+
+    </div>
+</body>
+</html>

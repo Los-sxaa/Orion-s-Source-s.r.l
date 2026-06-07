@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+<meta charset="UTF-8">
+<title>LOVE COLLECTION</title>
+
+<style>
+
+body {
+    margin: 0;
+    background-image: url("../img/lovecollection.jpg");
+    background-size: cover;
+    font-family: "Times New Roman";
+    text-align: center;
+}
+
+/* TITOLI */
+h1 {
+    font-size: 60px;
+    color: darkred;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: rgb(43, 0, 0);
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+/* GRIGLIA 2x3 */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonne fisse */
+    gap: 50px; /* spazio tra le card */
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* CARD PIÙ GRANDE */
+.photo {
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(6px);
+    border-radius: 18px;
+    padding: 15px;
+
+    width: 100%;
+    height: 420px; /* più grande */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* HOVER */
+.photo:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* NOME */
+.nome {
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding-bottom: 6px;
+}
+
+/* IMMAGINI PIÙ GRANDI */
+.photo img {
+    width: 100%;
+    height: 280px; /* più grande */
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.photo img:hover {
+    transform: scale(1.05);
+}
+
+/* PREZZO */
+.photo p {
+    font-size: 16px;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    padding-top: 6px;
+    margin: 0;
+}
+
+/* LINK */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+</style>
+</head>
+
+<body>
+<h1>LOVE COLLECTION</h1>
+<h2>Affrettati ad acquistare tutti i gioielli della collezione per la persona della tua vita!</h2>
+
+<div class="gallery">
+
+<div class="photo">
+    <div class="nome">SET LOVE</div>
+    <a href="../pages/prod_love.html?nome=SET%20LOVE&prezzo=2500%2C00&img=../img/setlove.jpg&desc=Esprimi%20un'eleganza%20senza%20tempo%20con%20questo%20raffinato%20set%20della%20collezione%20Love.%20Realizzato%20con%20materiali%20pregiati%2C%20unisce%20la%20lucentezza%20dell'oro%20alla%20profondit%C3%A0%20del%20rubino%2C%20creando%20un%20equilibrio%20perfetto%20tra%20lusso%20e%20romanticismo.%20Ideale%20per%20occasioni%20speciali%20o%20per%20valorizzare%20ogni%20outfit.%3Cbr%3E%3Cbr%3E%E2%80%A2%20%3Cb%3EArticolo%3A%3C%2Fb%3E%201001%3Cbr%3E%E2%80%A2%20%3Cb%3ECollezione%3A%3C%2Fb%3E%20Love%3Cbr%3E%E2%80%A2%20%3Cb%3EMateriale%3A%3C%2Fb%3E%20Oro%2018%20carati%2C%20rubino%3Cbr%3E%E2%80%A2%20%3Cb%3ETaglia%3A%3C%2Fb%3E%20Regolabile">
+        <img src="../img/setlove.jpg">
+    </a>
+    <p>2.500,00€</p>
+</div>
+
+<div class="photo">
+    <div class="nome">OROLOGIO LOVE</div>
+<a href="../pages/prod_love.html?nome=OROLOGIO%20LOVE&prezzo=120%2C00&img=../img/orologiolove.jpg&desc=Rendi%20ogni%20momento%20speciale%20con%20questo%20elegante%20orologio%20della%20collezione%20Love.%20Il%20design%20raffinato%20%C3%A8%20arricchito%20da%20dettagli%20luminosi%20e%20finiture%20dorate%2C%20che%20donano%20un%20tocco%20romantico%20e%20moderno.%20Perfetto%20per%20accompagnare%20ogni%20giornata%20con%20stile.%3Cbr%3E%3Cbr%3E%E2%80%A2%20%3Cb%3EArticolo%3A%3C%2Fb%3E%201002%3Cbr%3E%E2%80%A2%20%3Cb%3ECollezione%3A%3C%2Fb%3E%20Love%3Cbr%3E%E2%80%A2%20%3Cb%3EMateriale%3A%3C%2Fb%3E%20Acciaio%20e%20lega%20dorata%3Cbr%3E%E2%80%A2%20%3Cb%3EResistenza%3A%3C%2Fb%3E%20All'acqua">
+    <img src="../img/orologiolove.jpg">
+    </a>
+    <p>120,00€</p>
+</div>
+
+<div class="photo">
+    <div class="nome">ORECCHINI LOVE</div>
+    <a href="../pages/prod_love.html?nome=ORECCHINI%20LOVE&prezzo=50%2C00&img=../img/orecchinilove.jpg&desc=Illumina%20il%20tuo%20stile%20con%20questi%20delicati%20orecchini%20della%20collezione%20Love.%20Le%20perle%20luminose%20si%20uniscono%20a%20dettagli%20in%20velluto%2C%20creando%20un%20design%20romantico%20e%20sofisticato.%20Perfetti%20per%20aggiungere%20un%20tocco%20di%20eleganza%20ai%20tuoi%20look%20quotidiani.%3Cbr%3E%3Cbr%3E%E2%80%A2%20%3Cb%3EArticolo%3A%3C%2Fb%3E%201003%3Cbr%3E%E2%80%A2%20%3Cb%3ECollezione%3A%3C%2Fb%3E%20Love%3Cbr%3E%E2%80%A2%20%3Cb%3EMateriale%3A%3C%2Fb%3E%20Perle%2C%20velluto%3Cbr%3E%E2%80%A2%20%3Cb%3EChiusura%3A%3C%2Fb%3E%20A%20perno">
+        <img src="../img/orecchinilove.jpg">
+    </a>
+    <p>50,00€</p>
+</div>
+
+<div class="photo">
+    <div class="nome">ANELLO LOVE</div>
+<a href="../pages/prod_love.html?nome=ANELLO%20LOVE&prezzo=200%2C00&img=../img/anellolove.jpg&desc=Esalta%20la%20tua%20eleganza%20con%20questo%20anello%20raffinato%20della%20collezione%20Love.%20Il%20rubino%20centrale%20cattura%20la%20luce%2C%20mentre%20le%20finiture%20in%20oro%20donano%20un%20tocco%20di%20lusso%20senza%20tempo.%20Un%20gioiello%20perfetto%20per%20ogni%20occasione.%3Cbr%3E%3Cbr%3E%E2%80%A2%20%3Cb%3EArticolo%3A%3C%2Fb%3E%201004%3Cbr%3E%E2%80%A2%20%3Cb%3ECollezione%3A%3C%2Fb%3E%20Love%3Cbr%3E%E2%80%A2%20%3Cb%3EMateriale%3A%3C%2Fb%3E%20Oro%2C%20rubino%3Cbr%3E%E2%80%A2%20%3Cb%3ETaglia%3A%3C%2Fb%3E%20Regolabile">
+    <img src="../img/anellolove.jpg">
+    </a>
+    <p>200,00€</p>
+</div>
+
+<div class="photo">
+    <div class="nome">COLLANA LOVE</div>
+    <a href="../pages/prod_love.html?nome=COLLANA%20LOVE&prezzo=150%2C00&img=../img/collana12.jpg&desc=Lasciati%20conquistare%20da%20questa%20romantica%20collana%20della%20collezione%20Love.%20Il%20pendente%20in%20rubino%20%C3%A8%20esaltato%20da%20delicate%20perle%2C%20creando%20un%20equilibrio%20perfetto%20tra%20raffinatezza%20e%20femminilit%C3%A0.%20Ideale%20per%20illuminare%20ogni%20look.%3Cbr%3E%3Cbr%3E%E2%80%A2%20%3Cb%3EArticolo%3A%3C%2Fb%3E%201005%3Cbr%3E%E2%80%A2%20%3Cb%3ECollezione%3A%3C%2Fb%3E%20Love%3Cbr%3E%E2%80%A2%20%3Cb%3EMateriale%3A%3C%2Fb%3E%20Oro%2C%20perle%2C%20rubino%3Cbr%3E%E2%80%A2%20%3Cb%3ELunghezza%3A%3C%2Fb%3E%2045%20cm">
+        <img src="../img/collana12.jpg">
+    </a>
+    <p>150,00€</p>
+</div>
+
+<div class="photo">
+    <div class="nome">BRACCIALE LOVE</div>
+    <a href="../pages/prod_love.html?nome=BRACCIALE%20LOVE&prezzo=80%2C00&img=../img/braccialelove.jpg&desc=Aggiungi%20un%20tocco%20di%20eleganza%20al%20tuo%20stile%20con%20questo%20raffinato%20bracciale%20della%20collezione%20Love.%20I%20piccoli%20rubini%20incastonati%20si%20uniscono%20a%20finiture%20in%20oro%20per%20un%20effetto%20luminoso%20e%20romantico.%20Perfetto%20per%20ogni%20occasione.%3Cbr%3E%3Cbr%3E%E2%80%A2%20%3Cb%3EArticolo%3A%3C%2Fb%3E%201006%3Cbr%3E%E2%80%A2%20%3Cb%3ECollezione%3A%3C%2Fb%3E%20Love%3Cbr%3E%E2%80%A2%20%3Cb%3EMateriale%3A%3C%2Fb%3E%20Oro%2C%20rubino%3Cbr%3E%E2%80%A2%20%3Cb%3ELunghezza%3A%3C%2Fb%3E%2018%20cm">
+        <img src="../img/braccialelove.jpg">
+    </a>
+    <p>80,00€</p>
+</div>
+
+</div>
+</body>
+</html>

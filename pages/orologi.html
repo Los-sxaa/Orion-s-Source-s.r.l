@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OROLOGI ORION</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    color: darkblue;
+
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* TITOLO */
+.title {
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 90px;
+    color: darkblue;
+    font-family: "Edwardian Script ITC";
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+/* GRID GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    padding: 50px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* CARD */
+.photo {
+    text-align: center;
+    cursor: pointer;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(6px);
+    border-radius: 18px;
+    padding: 15px;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.photo:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* NOME PRODOTTO */
+.nome {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding-bottom: 6px;
+}
+
+/* IMMAGINI */
+.photo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.photo img:hover {
+    transform: scale(1.05);
+}
+
+/* PREZZO */
+.photo p {
+    margin-top: 10px;
+    font-size: 16px;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    padding-top: 6px;
+}
+
+/* LINK RESET */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="title">
+    <h1>Orion's Source</h1>
+</div>
+
+<div class="gallery">
+            <div class="photo">
+            <div class="nome">OROLOGIO DELUXE</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20DELUXE&prezzo=30%2E000%2C00&img=../img/orologio1.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro+18ct+1607%2C5g%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3EM%2FL%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EInossidabile%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrologio+elegante+di+lusso%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5+giorni%3Cbr%3E%3Cb%3ECondizioni+per+reso%3A%3C%2Fb%3E15+giorni">
+                <img src="../img/orologio1.jpg" alt="OROLOGIO DELUXE">
+            </a>
+            <p>30.000,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">OROLOGIO RICH</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20RICH&prezzo=50%2E000%2C00&img=../img/orologio2.png&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro+bianco+18ct+1200g%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3EL%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EImpermeabile+100m%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrologio+elegante+da+sera%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5+giorni%3Cbr%3E%3Cb%3ECondizioni+per+reso%3A%3C%2Fb%3E15+giorni">
+                <img src="../img/orologio2.png" alt="OROLOGIO RICH">
+            </a>
+            <p>50.000,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">OROLOGIO LIMITED EDITION</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20LIMITED%20EDITION&prezzo=650%2E000%2C00&img=../img/orologio3.png&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro+18ct+2000g%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3EXL%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EImpermeabile+50m%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrologio+da+collezione+limitata%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E5-7+giorni">
+                <img src="../img/orologio3.png" alt="OROLOGIO LIMITED EDITION">
+            </a>
+            <p>650.000,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">OROLOGIO MUST</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20MUST&prezzo=50%2E000%2C00&img=../img/orologio4.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro+giallo+18ct+1000g%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3AM%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EResistente+all%27acqua%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrologio+classico+giornaliero%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5+giorni">
+                <img src="../img/orologio4.jpg" alt="OROLOGIO MUST">
+            </a>
+            <p>50.000,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">OROLOGIO WOLF OF WALL STREET</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20WOLF%20OF%20WALL%20STREET&prezzo=192%2E900%2C00&img=../img/orologio5.png&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro+bianco+18ct+1500g%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3AL%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EImpermeabile+200m%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrologio+da+affari+luxury%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5+giorni">
+                <img src="../img/orologio5.png" alt="OROLOGIO WOLF OF WALL STREET">
+            </a>
+            <p>192.900,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">OROLOGIO FEELING MILLENNIAL</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20FEELING%20MILLENNIAL&prezzo=452%2E010%2C00&img=../img/orologio7.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro+rosa+18ct+1200g%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3AM%2FL%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EResistente+50m%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrologio+giovane+e+colorato%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5+giorni">
+                <img src="../img/orologio7.jpg" alt="OROLOGIO FEELING MILLENNIAL">
+            </a>
+            <p>452.010,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">OROLOGIO PERCEPTION OF YOUR MONEY</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20PERCEPTION%20OF%20YOUR%20MONEY&prezzo=865%2E000%2C00&img=../img/orologio6.png&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro+bianco+18ct+1800g%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3AXL%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EImpermeabile+100m%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrologio+di+lusso+per+investimenti%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5+giorni">
+                <img src="../img/orologio6.png" alt="OROLOGIO PERCEPTION OF YOUR MONEY">
+            </a>
+            <p>865.000,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">OROLOGIO CARE FOR YOUR SALARY</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20CARE%20FOR%20YOUR%20SALARY&prezzo=20%2E000%2C00&img=../img/orologio8.png&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro+giallo+18ct+900g%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3AM%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EResistente+20m%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrologio+economico+ma+stiloso%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5+giorni">
+                <img src="../img/orologio8.png" alt="OROLOGIO CARE FOR YOUR SALARY">
+            </a>
+            <p>20.000,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">OROLOGIO MARBLE</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20MARBLE&prezzo=100%2C00&img=../img/orologio9.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EMarmo+e+acciaio%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ETaglia+unica%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EResistente+20m%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EDesign+minimal+ed+elegante%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5+giorni">
+                <img src="../img/orologio9.jpg" alt="OROLOGIO MARBLE">
+            </a>
+            <p>100,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">OROLOGIO FILLE</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20FILLE&prezzo=1%2E506%2C00&img=../img/orologio10.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro+rosa+e+vetro%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile+S-L%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EResistente+20m%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EStile+raffinato+e+luminoso%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5+giorni">
+                <img src="../img/orologio10.jpg" alt="OROLOGIO FILLE">
+            </a>
+            <p>1.506,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">OROLOGIO CASUAL</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20CASUAL&prezzo=90%2C00&img=../img/orologio11.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3ESilicone+e+acciaio%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile+M-L%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EResistente+20m%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EPerfetto+per+uso+quotidiano%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5+giorni">
+                <img src="../img/orologio11.jpg" alt="OROLOGIO CASUAL">
+            </a>
+            <p>90,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">OROLOGIO VINTAGE</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20VINTAGE&prezzo=100%2C00&img=../img/orologio12.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EPelle+e+acciaio%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ETaglia+unica%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EResistente+20m%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3ELook+classico+senza+tempo%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5+giorni">
+                <img src="../img/orologio12.jpg" alt="OROLOGIO VINTAGE">
+            </a>
+            <p>100,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">OROLOGIO CHIC</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20CHIC&prezzo=125%2C00&img=../img/orologio13.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EAcciaio+lucido%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile+S-M%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EResistente+20m%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EEleganza+moderna%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5+giorni">
+                <img src="../img/orologio13.jpg" alt="OROLOGIO CHIC">
+            </a>
+            <p>125,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">OROLOGIO LIGHT</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20LIGHT&prezzo=200%2C00&img=../img/orologio14.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3ETitanio+leggero%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ETaglia+unica%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EResistente+20m%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EComodo+e+ultra+leggero%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5+giorni">
+                <img src="../img/orologio14.jpg" alt="OROLOGIO LIGHT">
+            </a>
+            <p>200,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">OROLOGIO DIGITAL</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20DIGITAL&prezzo=300%2C00&img=../img/orologio15.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EPlastica+tech%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile+M-L%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EResistente+20m%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3ETecnologico+e+funzionale%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5+giorni">
+                <img src="../img/orologio15.jpg" alt="OROLOGIO DIGITAL">
+            </a>
+            <p>300,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">OROLOGIO DATED</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20DATED&prezzo=70%2C00&img=../img/orologio16.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EAcciaio+opaco%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile+L-XL%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EResistente+20m%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3ESemplice+e+robusto%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5+giorni">
+                <img src="../img/orologio16.jpg" alt="OROLOGIO DATED">
+            </a>
+            <p>70,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">OROLOGIO METAL</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20METAL&prezzo=150%2C00&img=../img/orologio17.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EAcciaio+inox%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ETaglia+unica%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EResistente+20m%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EStile+forte+e+moderno%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5+giorni">
+                <img src="../img/orologio17.jpg" alt="OROLOGIO METAL">
+            </a>
+            <p>150,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">OROLOGIO FUTURE</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20FUTURE&prezzo=350%2C00&img=../img/orologio18.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EAlluminio+tech%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile+S-L%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EResistente+20m%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3ELook+futuristico%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5+giorni">
+                <img src="../img/orologio18.jpg" alt="OROLOGIO FUTURE">
+            </a>
+            <p>350,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">OROLOGIO FOR EVERYONE</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20FOR%20EVERYONE&prezzo=100%2C00&img=../img/orologio19.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3ELega+leggera%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile+S-M%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EResistente+20m%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3ESemplice+e+versatile%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5+giorni">
+                <img src="../img/orologio19.jpg" alt="OROLOGIO FOR EVERYONE">
+            </a>
+            <p>100,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">OROLOGIO NOT FOR EVERYONE</div>
+            <a href="orologi_prod.html?nome=OROLOGIO%20NOT%20FOR%20EVERYONE&prezzo=170%2C00&img=../img/orologio20.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EAcciaio+nero%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ETaglia+unica%3Cbr%3E%3Cb%3ERapporto+con+l%27acqua%3A%3C%2Fb%3EResistente+20m%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EDesign+deciso+e+unico%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5+giorni">
+                <img src="../img/orologio20.jpg" alt="OROLOGIO NOT FOR EVERYONE">
+            </a>
+            <p>170,00€</p>
+        </div>
+    </div>
+</body>
+</html>

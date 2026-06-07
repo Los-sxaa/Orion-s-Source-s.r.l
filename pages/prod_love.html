@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Dettagli Love Collection</title>
+<style>
+
+body {
+    margin: 0;
+    padding: 30px;
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Times New Roman";
+    color: white;
+}
+
+/* TITOLO */
+h1 {
+    margin: 0 0 20px 0;
+    font-size: 36px;
+    color: rgb(78, 10, 10);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* CONTAINER PRINCIPALE */
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 20px;
+}
+
+/* PARTE SINISTRA */
+.sinistra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+}
+
+.sinistra h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: rgb(78, 10, 10);
+    text-align: center;
+}
+
+/* IMMAGINE */
+.sinistra img {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+}
+
+.sinistra img:hover {
+    transform: scale(1.02);
+}
+
+/* PARTE DESTRA */
+.destra {
+    max-width: 600px;
+}
+
+/* PREZZO */
+.prezzo {
+    font-size: 38px;
+    font-weight: bold;
+    color: rgb(173, 0, 0);
+    margin-bottom: 20px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* BOX DESCRIZIONE */
+.box {
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(6px);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* TESTO DESCRIZIONE */
+p.descrizione {
+    line-height: 1.8;
+    font-size: 17px;
+    margin: 0;
+}
+
+/* BOTTONI */
+button {
+    padding: 12px 22px;
+    margin-right: 10px;
+    background-color: rgb(255, 135, 135);
+    color: rgb(78, 10, 10);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sinistra">
+        <h1 id="nome"></h1>
+        <img id="immagine" src="">
+    </div>
+
+    <div class="destra">
+        <div class="prezzo" id="prezzo"></div>
+
+        <div class="box">
+            <p id="descrizione" class="descrizione"></p>
+        </div>
+
+        <button id="acquista">Acquista</button>
+        <button id="carrello">Aggiungi al carrello</button>
+    </div>
+
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+const nome = params.get("nome") || "SET LOVE";
+const prezzoRaw = params.get("prezzo") || "2500,00";
+const img = params.get("img") || "../img/setlove.jpg";
+
+const descrizione = params.get("desc") || `
+<b>Materiale:</b> Oro 18 carati<br>
+<b>Taglia:</b> Regolabile<br>
+<b>Descrizione:</b> Prodotto elegante della collezione LOVE.<br>
+`;
+
+const prezzoNumero = parseFloat(
+    prezzoRaw.replace(/\./g, "").replace(",", ".")
+);
+
+const prezzoFormattato = prezzoNumero.toLocaleString("it-IT", {
+    style: "currency",
+    currency: "EUR"
+});
+
+document.getElementById("nome").innerText = nome;
+document.getElementById("prezzo").innerText = prezzoFormattato;
+document.getElementById("immagine").src = img;
+document.getElementById("descrizione").innerHTML = descrizione;
+
+document.getElementById("acquista").onclick = () => {
+    alert("Hai acquistato " + nome);
+};
+
+document.getElementById("carrello").onclick = () => {
+    let carrello = JSON.parse(localStorage.getItem("carrello")) || [];
+
+    carrello.push({
+        nome: nome,
+        prezzo: prezzoNumero,
+        img: img
+    });
+
+    localStorage.setItem("carrello", JSON.stringify(carrello));
+
+    alert(nome + " aggiunto al carrello!");
+};
+</script>
+
+</body>
+</html>

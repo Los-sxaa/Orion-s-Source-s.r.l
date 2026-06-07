@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ORECCHINI ORION</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    color: darkblue;
+
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* TITOLO */
+.title {
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 90px;
+    color: darkblue;
+    font-family: "Edwardian Script ITC";
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+/* GRID GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    padding: 50px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* CARD */
+.photo {
+    text-align: center;
+    cursor: pointer;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(6px);
+    border-radius: 18px;
+    padding: 15px;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.photo:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* NOME PRODOTTO */
+.nome {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding-bottom: 6px;
+}
+
+/* IMMAGINI */
+.photo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.photo img:hover {
+    transform: scale(1.05);
+}
+
+/* PREZZO */
+.photo p {
+    margin-top: 10px;
+    font-size: 16px;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    padding-top: 6px;
+}
+
+/* LINK RESET */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="title">
+    <h1>Orion's Source</h1>
+</div>
+
+<div class="gallery">
+            <div class="photo">
+            <div class="nome">ORECCHINI DRAGON</div>
+            <a href="../pages/set_prod.html?nome=ORECCHINI%20DRAGON&prezzo=70%2C00&img=../img/orecchini1.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EAcciaio%20inox%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrecchini%20in%20acciaio%20inox.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/orecchini1.jpg" alt="ORECCHINI DRAGON">
+            </a>
+            <p>70,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">ORECCHINI DOUBLE</div>
+            <a href="../pages/set_prod.html?nome=ORECCHINI%20DOUBLE&prezzo=60%2C00&img=../img/orecchini2.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EAcciaio%20inox%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrecchini%20in%20acciaio%20inox.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/orecchini2.jpg" alt="ORECCHINI DOUBLE">
+            </a>
+            <p>60,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">ORECCHINI LIGHTENING</div>
+            <a href="../pages/set_prod.html?nome=ORECCHINI%20LIGHTENING&prezzo=60%2C00&img=../img/orecchini3.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EAcciaio%20inox%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrecchini%20in%20acciaio%20inox.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/orecchini3.jpg" alt="ORECCHINI LIGHTENING">
+            </a>
+            <p>60,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">ORECCHINI PINK FLOYD-ISH</div>
+            <a href="../pages/set_prod.html?nome=ORECCHINI%20PINK%20FLOYD-ISH&prezzo=19%2C65&img=../img/orecchini4.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EAcciaio%20inox%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrecchini%20in%20acciaio%20inox.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/orecchini4.jpg" alt="ORECCHINI PINK FLOYD-ISH">
+            </a>
+            <p>19,65€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">ORECCHINI HORN</div>
+            <a href="../pages/set_prod.html?nome=ORECCHINI%20HORN&prezzo=20%2C00&img=../img/orecchini5.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EAcciaio%20inox%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrecchini%20in%20acciaio%20inox.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/orecchini5.jpg" alt="ORECCHINI HORN">
+            </a>
+            <p>20,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">ORECCHINI ALTERNATIVE</div>
+            <a href="../pages/set_prod.html?nome=ORECCHINI%20ALTERNATIVE&prezzo=100%2C00&img=../img/orecchini6.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3ESmeraldo%20e%20acciaio%20inox%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrecchini%20con%20smeraldo%20e%20acciaio%20inox.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/orecchini6.jpg" alt="ORECCHINI ALTERNATIVE">
+            </a>
+            <p>100,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">ORECCHINI GALAXY</div>
+            <a href="../pages/set_prod.html?nome=ORECCHINI%20GALAXY&prezzo=40%2C00&img=../img/4labradorite.png&desc=%3Cb%3EMateriale%3A%3C%2Fb%3ELabradorite%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrecchini%20in%20labradorite.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/4labradorite.png" alt="ORECCHINI GALAXYS">
+            </a>
+            <p>40,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">ORECCHINI FLYING</div>
+            <a href="../pages/set_prod.html?nome=ORECCHINI%20FLYING&prezzo=35%2C00&img=../img/orecchini8.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EPlaccato%20oro%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrecchini%20placcati%20oro.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/orecchini8.jpg" alt="ORECCHINI FLYING">
+            </a>
+            <p>35,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">ORECCHINI SEEMS HEAVY</div>
+            <a href="../pages/set_prod.html?nome=ORECCHINI%20SEEMS%20HEAVY&prezzo=75%2C00&img=../img/orecchini9.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EAmetista%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrecchini%20con%20ametista.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/orecchini9.jpg" alt="ORECCHINI SEEMS HEAVY">
+            </a>
+            <p>75,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">ORECCHINI QUEEN</div>
+            <a href="../pages/set_prod.html?nome=ORECCHINI%20QUEEN&prezzo=350%2C00&img=../img/orecchini10.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EDiamante%20e%20oro%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrecchini%20in%20oro%20con%20diamanti.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/orecchini10.jpg" alt="ORECCHINI QUEEN">
+            </a>
+            <p>350,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">ORECCHINI BRIDAL</div>
+            <a href="../pages/set_prod.html?nome=ORECCHINI%20BRIDAL&prezzo=200%2C00&img=../img/orecchini11.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EDiamante%20e%20oro%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrecchini%20in%20oro%20con%20diamanti.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/orecchini11.jpg" alt="ORECCHINI BRIDAL">
+            </a>
+            <p>200,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">ORECCHINI PEACOCK</div>
+            <a href="../pages/set_prod.html?nome=ORECCHINI%20PEACOCK&prezzo=250%2C00&img=../img/orecchini12.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EDiamante%2C%20oro%20e%20smeraldi%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrecchini%20in%20oro%20con%20diamanti%20e%20smeraldi.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/orecchini12.jpg" alt="ORECCHINI PEACOCK">
+            </a>
+            <p>250,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">ORECCHINI VALENTINE</div>
+            <a href="../pages/set_prod.html?nome=ORECCHINI%20VALENTINE&prezzo=50%2C00&img=../img/orecchini13.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EPlaccato%20oro%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrecchini%20placcati%20oro.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/orecchini13.jpg" alt="ORECCHINI VALENTINE">
+            </a>
+            <p>50,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">ORECCHINI DROP</div>
+            <a href="../pages/set_prod.html?nome=ORECCHINI%20DROP&prezzo=30%2C00&img=../img/orecchini14.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EPlaccato%20oro%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrecchini%20placcati%20oro.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/orecchini14.jpg" alt="ORECCHINI DROP">
+            </a>
+            <p>30,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">EAR CUFF ELEGANT</div>
+            <a href="../pages/set_prod.html?nome=EAR%20CUFF%20ELEGANT&prezzo=25%2C00&img=../img/orecchini15.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EPlaccato%20oro%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EEar%20cuff%20placcato%20oro.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/orecchini15.jpg" alt="EAR CUFF ELEGANT">
+            </a>
+            <p>25,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">EAR CUFF LEAVES</div>
+            <a href="../pages/set_prod.html?nome=EAR%20CUFF%20LEAVES&prezzo=35%2C00&img=../img/orecchini16.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EPlaccato%20oro%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EEar%20cuff%20placcato%20oro.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/orecchini16.jpg" alt="EAR CUFF LEAVES">
+            </a>
+            <p>35,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">EAR CUFF MYSTIC</div>
+            <a href="../pages/set_prod.html?nome=EAR%20CUFF%20MYSTIC&prezzo=50%2C00&img=../img/orecchini17.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EPlaccato%20oro%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EEar%20cuff%20placcato%20oro.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/orecchini17.jpg" alt="EAR CUFF MYSTIC">
+            </a>
+            <p>50,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">EAR CUFF SPRINGFIELD</div>
+            <a href="../pages/set_prod.html?nome=EAR%20CUFF%20SPRINGFIELD&prezzo=25%2C00&img=../img/orecchini18.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EPlaccato%20oro%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EEar%20cuff%20placcato%20oro.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/orecchini18.jpg" alt="EAR CUFF SPRINGFIELD">
+            </a>
+            <p>25,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">EAR CUFF PETALS</div>
+            <a href="../pages/set_prod.html?nome=EAR%20CUFF%20PETALS&prezzo=15%2C00&img=../img/orecchini19.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EPlaccato%20oro%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EEar%20cuff%20placcato%20oro.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/orecchini19.jpg" alt="EAR CUFF PETALS">
+            </a>
+            <p>15,00€</p>
+        </div>
+    
+        <div class="photo">
+            <div class="nome">ORECCHINI DELICACY</div>
+            <a href="../pages/set_prod.html?nome=ORECCHINI%20DELICACY&prezzo=25%2C00&img=../img/orecchini20.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EPlaccato%20oro%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EOrecchini%20placcati%20oro.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/orecchini20.jpg" alt="ORECCHINI DELICACY">
+            </a>
+            <p>25,00€</p>
+        </div>
+    </div>
+</body>
+</html>

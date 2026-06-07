@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SET ORION</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    color: darkblue;
+
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* TITOLO */
+.title {
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 90px;
+    color: darkblue;
+    font-family: "Edwardian Script ITC";
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+/* GRID GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    padding: 50px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* CARD */
+.photo {
+    text-align: center;
+    cursor: pointer;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(6px);
+    border-radius: 18px;
+    padding: 15px;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.photo:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* NOME PRODOTTO */
+.nome {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding-bottom: 6px;
+}
+
+/* IMMAGINI */
+.photo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.photo img:hover {
+    transform: scale(1.05);
+}
+
+/* PREZZO */
+.photo p {
+    margin-top: 10px;
+    font-size: 16px;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    padding-top: 6px;
+}
+
+/* LINK RESET */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="title">
+    <h1>Orion's Source</h1>
+</div>
+
+<div class="gallery">
+
+    <div class="h2"> <MARQUEE>
+        Per acquistare qualsiasi pezzo singolarmente, consultare
+        la sezione nella schermata home <B>Info < Ordini su commissione</B>
+    </div> </MARQUEE>
+   
+    <div class="gallery">
+
+    <div class="photo">
+        <div class="nome">SET DIVINE</div>
+            <a href="../pages/set_prod.html?nome=SET%20DIVINE&prezzo=45%2E000%2C00&img=../img/2diamond.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EDiamanti%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3EUnica%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EIl%20set%20presenta%20un%20anello%20a%20goccia%2C%20un%20paio%20di%20orecchini%2C%20un%20collier%20e%20un%20bracciale%20di%20diamanti.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/2diamond.jpg" alt="SET DIVINE">
+            </a>
+            <p>45.000,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">SET LIMITED EDITION</div>
+            <a href="../pages/set_prod.html?nome=SET%20LIMITED%20EDITION&prezzo=150%2E000%2C00&img=../img/3gold.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%2024%20carati%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3EUnica%20-%20Collier%20regolabile%20S%2C%20M%2C%20L%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EIl%20set%20offre%20un%20anello%2C%20abbinato%20al%20paio%20di%20orecchini%3B%20un%20bracciale%20spesso%20e%20un%20collier.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/3gold.jpg" alt="SET LIMITED EDITION">
+            </a>
+            <p>150.000,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">SET DEEP OCEAN</div>
+            <a href="../pages/set_prod.html?nome=SET%20DEEP%20OCEAN&prezzo=75%2E000%2C00&img=../img/1sapphire.png&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EZaffiro%20e%20labradorite%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3EUnica%20-%20Collier%20regolabile%20M%2C%20L%2C%20XL%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EIl%20set%20comprende%20un%20paio%20di%20orecchini%20pendenti%20e%20un%20doppio%20collier.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/1sapphire.png" alt="SET DEEP OCEAN">
+            </a>
+            <p>75.000,00€</p>
+        </div>
+
+    <div class="photo">
+        <div class="nome">SET MINIMAL</div>
+            <a href="../pages/set_prod.html?nome=SET%20MINIMAL&prezzo=5%2E000%2C00&img=../img/set4.png&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%209%20carati%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3EUnica%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EIl%20set%20include%20una%20collana%20a%20cerchi%20alterni%2C%20abbinata%20all'anello%20a%20spirale%20regolabile%20e%20un%20paio%20di%20orecchini%20pendenti.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/set4.png" alt="SET MINIMAL">
+            </a>
+            <p>5.000,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">SET VASKANIA</div>
+            <a href="../pages/set_prod.html?nome=SET%20VASKANIA&prezzo=22%2E200%2C00&img=../img/set5.png&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EZaffiro%20e%20oro%20bianco%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3EUnica%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3ESet%20lussuoso%20in%20oro%20bianco%20con%20punti%20luce%20di%20zaffiro%3B%20comprende%20un%20paio%20di%20orecchini%2C%20una%20collana%20e%20un%20bracciale.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/set5.png" alt="SET VASKANIA">
+            </a>
+            <p>22.200,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome">PEARL SET</div>
+            <a href="../pages/set_prod.html?nome=PEARL%20SET&prezzo=35%2E000%2C00&img=../img/set6.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EPerle%20e%20argento%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3EUnica%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3ESet%20raffinato%20comprendente%20un%20anello%20basic%2C%20un%20paio%20di%20orecchini%20pendenti%2C%20un%20collier%20in%20perle%20con%20dettagli%20in%20argento%20e%20un%20bracciale%20abbinato.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/set6.jpg" alt="PEARL SET">
+            </a>
+            <p>35.000,00€</p>
+        </div>    
+
+        <div class="photo">
+            <div class="nome">FLOREAL SET</div>
+            <a href="../pages/set_prod.html?nome=FLOREAL%20SET&prezzo=45%2E000%2C00&img=../img/set7.png&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20rosa%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3EUnica%20-%20Regolabile%20S%2C%20M%2C%20L%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EIl%20set%20offre%20un%20paio%20di%20orecchini%20pendenti%20e%20leggeri%20e%20un%20collier%20regolabile%20dalla%20taglia%20S%20alla%20L%2C%20a%20tema%20floreale.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/set7.png" alt="FLOREAL SET">
+            </a>
+            <p>45.000,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome"> SET DEEP PURPLE</div>
+            <a href="../pages/set_prod.html?nome=SET%20DEEP%20PURPLE&prezzo=19%2E680%2C00&img=../img/set8.png&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EAmetista%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3EUnica%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EDoppia%20collana%20sottile%20con%20ciondolo%20a%20goccia%20e%20anello%20spesso%20con%20pietra%20di%20ametista.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/set8.png" alt="SET DEEP PURPLE">
+            </a>
+            <p>19.680,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome"> SET PLAIN</div>
+            <a href="../pages/set_prod.html?nome=SET%20FILLED&prezzo=90%2C00&img=../img/set10.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EAcciaio%20inox%20e%20oro%2018%20carati%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%20S-M-L%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EIl%20set%20include%20collana%2C%20anello%20e%20orecchini%20coordinati.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+            <img src="../img/set9.jpg" alt="SET PLAIN">
+            </a>
+            <p>80,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome"> SET FILLED</div>
+            <a href="../pages/set_prod.html?nome=SET%20FILLED&prezzo=90%2C00&img=../img/set10.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EAcciaio%20inox%20e%20oro%2018%20carati%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%20S-M-L%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EIl%20set%20include%20collana%2C%20anello%20e%20orecchini%20coordinati.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/set10.jpg" alt="SET FILLED">
+            </a>
+            <p>90,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome"> SET SWAN</div>
+            <a href="../pages/set_prod.html?nome=SET%20SWAN&prezzo=1500%2C00&img=../img/set11.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EDiamanti%20e%20ametista%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3EUnica%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3ESet%20elegante%20con%20collana%2C%20anello%2C%20orecchini%20e%20bracciale.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/set11.jpg" alt="SET SWAN">
+            </a>
+            <p>1.500,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome"> SET SNAKE</div>
+            <a href="../pages/set_prod.html?nome=SET%20SNAKE&prezzo=110%2C00&img=../img/set12.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%2018%20carati%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%20S-L%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EInclude%20collana%2C%20anello%2C%20orecchini%20e%20bracciale.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/set12.jpg" alt="SET SNAKE">
+            </a>
+            <p>110,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome"> SET VORTEX</div>
+            <a href="../pages/set_prod.html?nome=SET%20VORTEX&prezzo=150%2C00&img=../img/set13.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%2018%20carati%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3EUnica%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EIl%20set%20include%20collana%2C%20anello%20e%20orecchini.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/set13.jpg" alt="SET VORTEX">
+            </a>
+            <p>150,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome"> SET SHIMMER</div>
+            <a href="../pages/set_prod.html?nome=SET%20SHIMMER&prezzo=1600%2C00&img=../img/set14.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EDiamante%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%20S-M-L%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EInclude%20collana%2C%20anello%2C%20orecchini%20e%20bracciale.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/set14.jpg" alt="SET SHIMMER">
+            </a>
+            <p>1.600,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome"> SET APPLE PIE</div>
+            <a href="../pages/set_prod.html?nome=SET%20APPLE%20PIE&prezzo=1200%2C00&img=../img/set15.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EArgento%20e%20rubino%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3EUnica%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EInclude%20collana%2C%20anello%2C%20orecchini%20e%20bracciale.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/set15.jpg" alt="SET APPLE PIE">
+            </a>
+            <p>1.200,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome"> SET HOPEFUL</div>
+            <a href="../pages/set_prod.html?nome=SET%20HOPEFUL&prezzo=1000%2C00&img=../img/set16.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3ESmeraldo%20e%20argento%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%20S-L%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EInclude%20collana%2C%20anello%2C%20orecchini%20e%20bracciale.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/set16.jpg" alt="SET HOPEFUL">
+            </a>
+            <p>1.000,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome"> SET SUMMER BREAK</div>
+            <a href="../pages/set_prod.html?nome=SET%20SUMMER%20BREAK&prezzo=6060%2C26&img=../img/set17.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EZaffiro%20e%20oro%20bianco%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3EUnica%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EIl%20set%20include%20collana%2C%20anello%20e%20orecchini.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/set17.jpg" alt="SET SUMMER BREAK">
+            </a>
+            <p>6.060,26€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome"> SET PINWHEEL</div>
+            <a href="../pages/set_prod.html?nome=SET%20PINWHEEL&prezzo=1000%2C00&img=../img/set18.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EZaffiro%20e%20oro%20bianco%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%20S-M-L%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EInclude%20collana%2C%20anello%2C%20orecchini%20e%20bracciale.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/set18.jpg" alt="SET PINWHEEL">
+            </a>
+            <p>1.000,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome"> SET DARK</div>
+            <a href="../pages/set_prod.html?nome=SET%20DARK&prezzo=500%2C00&img=../img/set19.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3ELepidolite%20e%20argento%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3EUnica%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EIl%20set%20include%20collana%2C%20anello%20e%20orecchini.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/set19.jpg" alt="SET DARK">
+            </a>
+            <p>500,00€</p>
+        </div>
+
+        <div class="photo">
+            <div class="nome"> SET EXTRA ME</div>
+            <a href="../pages/set_prod.html?nome=SET%20EXTRA%20ME&prezzo=900%2C00&img=../img/set20.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EAmetista%20e%20oro%20fino%2024%20carati%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%20S-L%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3ESet%20completo%20con%20collana%2C%203%20anelli%2C%20orecchini%20e%20bracciale.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3EEntro%203-5%20giorni%20dall'acquisto.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3EEntro%2015%20giorni%20dalla%20consegna.">
+                <img src="../img/set20.jpg" alt="SET EXTRA ME">
+            </a>
+            <p>900,00€</p>
+        </div>
+        
+    </div>
+</body>
+</html>

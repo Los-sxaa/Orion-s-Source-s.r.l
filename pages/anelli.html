@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ANELLI ORION</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    color: darkblue;
+
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* TITOLO */
+.title {
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 90px;
+    color: darkblue;
+    font-family: "Edwardian Script ITC";
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+/* GRID GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    padding: 50px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* CARD */
+.photo {
+    text-align: center;
+    cursor: pointer;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(6px);
+    border-radius: 18px;
+    padding: 15px;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.photo:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* NOME PRODOTTO */
+.nome {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding-bottom: 6px;
+}
+
+/* IMMAGINI */
+.photo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.photo img:hover {
+    transform: scale(1.05);
+}
+
+/* PREZZO */
+.photo p {
+    margin-top: 10px;
+    font-size: 16px;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    padding-top: 6px;
+}
+
+/* LINK RESET */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="title">
+    <h1>Orion's Source</h1>
+</div>
+
+<div class="gallery">
+    <div class="photo">
+        <div class="nome">ANELLO MINIMAL</div>
+       <a href="../pages/anelli_prod.html?nome=ANELLO%20MINIMAL&prezzo=5%2C00&img=../img/anello1.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20e%20diamante%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20minimal%20in%20oro%20con%20diamante.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">
+            <img src="../img/anello1.jpg" alt="ANELLO MINIMAL">
+        </a>
+        <p>5,00€</p>
+    </div>
+
+    <div class="photo">
+        <div class="nome">ANELLO DOUBLE</div>
+        <a href="../pages/anelli_prod.html?nome=ANELLO%20DOUBLE&prezzo=100%2C00&img=../img/anello1.png&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20e%20diamante%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20double%20in%20oro%20e%20diamanti.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">
+            <img src="../img/anello1.png" alt="ANELLO DOUBLE">
+        </a>
+        <p>100,00€</p>
+    </div>
+
+    <div class="photo">
+        <div class="nome">ANELLO TINY</div>
+        <a href="../pages/anelli_prod.html?nome=ANELLO%20TINY&prezzo=75%2C00&img=../img/anello2.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20e%20diamante%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20tiny%20minimal%20con%20diamante.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">
+            <img src="../img/anello2.jpg" alt="ANELLO TINY">
+        </a>
+        <p>75,00€</p>
+    </div>
+
+    <div class="photo">
+        <div class="nome">ANELLO DROP</div>
+        <a href="../pages/anelli_prod.html?nome=ANELLO%20DROP&prezzo=125%2C00&img=../img/anello2.png&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20e%20diamante%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%3Cbr%3E%3Cb%3ERapporto%20con%20l'acqua%3A%3C%2Fb%3EResistente%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20drop%20in%20oro%20con%20diamante.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.%3Cbr%3E%3Cb%3EReso%3A%3C%2Fb%3E15%20giorni.">
+            <img src="../img/anello2.png" alt="ANELLO DROP">
+        </a>
+        <p>125,00€</p>
+    </div>
+
+    <!-- RIGA 2 -->
+    <div class="photo">
+        <div class="nome">ANELLO TEAR</div>
+        <a href="../pages/anelli_prod.html?nome=ANELLO%20TEAR&prezzo=50%2C00&img=../img/anello3.png&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20e%20lepidolite%3Cbr%3E%3Cb%3ETaglia%3A%3C%2Fb%3ERegolabile%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20rich%20tear%20con%20lepidolite.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.">
+            <img src="../img/anello3.png" alt="ANELLO RICH TEAR">
+        </a>
+        <p>50,00€</p>
+    </div>
+
+    <div class="photo">
+        <div class="nome">ANELLO RICH TEAR</div>
+        <a href="../pages/anelli_prod.html?nome=ANELLO%20RICH%20TEAR&prezzo=50%2C00&img=../img/anello3.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20e%20lepidolite%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20tear%20elegante.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.">
+            <img src="../img/anello3.jpg" alt="ANELLO RICH TEAR">
+        </a>
+        <p>50,00€</p>
+    </div>
+
+    <div class="photo">
+        <div class="nome">ANELLO MAID OF HONOR</div>
+        <a href="../pages/anelli_prod.html?nome=ANELLO%20MAID%20OF%20HONOR&prezzo=150%2C00&img=../img/anello4.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20e%20diamante%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20maid%20of%20honor.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.">
+            <img src="../img/anello4.jpg" alt="ANELLO MAID OF HONOR">
+        </a>
+        <p>150,00€</p>
+    </div>
+
+    <div class="photo">
+        <div class="nome">ANELLO VIOLET</div>
+        <a href="../pages/anelli_prod.html?nome=ANELLO%20VIOLET&prezzo=60%2C00&img=../img/anello4.png&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20e%20diamante%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20violet%20elegante.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.">
+            <img src="../img/anello4.png" alt="ANELLO VIOLET">
+        </a>
+        <p>60,00€</p>
+    </div>
+
+    <div class="photo">
+        <div class="nome">ANELLO CROWN</div>
+        <a href="../pages/anelli_prod.html?nome=ANELLO%20CROWN&prezzo=200%2C00&img=../img/anello5.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20e%20diamante%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20crown%20regale.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.">
+            <img src="../img/anello5.jpg" alt="ANELLO CROWN">
+        </a>
+        <p>200,00€</p>
+    </div>
+
+    <!-- RIGA 3 -->
+    <div class="photo">
+        <div class="nome">ANELLO FLOWER</div>
+        <a href="../pages/anelli_prod.html?nome=ANELLO%20FLOWER&prezzo=75%2C00&img=../img/anello6.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20e%20zaffiro%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20flower%20con%20zaffiro.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.">
+            <img src="../img/anello6.jpg" alt="ANELLO FLOWER">
+        </a>
+        <p>75,00€</p>
+    </div>
+
+    <div class="photo">
+        <div class="nome">ANELLO SIMPLE</div>
+        <a href="../pages/anelli_prod.html?nome=ANELLO%20SIMPLE&prezzo=65%2C00&img=../img/anello7.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20e%20diamante%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20simple%20minimal.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.">
+            <img src="../img/anello7.jpg" alt="ANELLO SIMPLE">
+        </a>
+        <p>65,00€</p>
+    </div>
+
+    <div class="photo">
+        <div class="nome">ANELLO MAGIQUE</div>
+        <a href="../pages/anelli_prod.html?nome=ANELLO%20MAGIQUE&prezzo=100%2C00&img=../img/anello7.png&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20e%20zaffiro%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20magique%20magico.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.">
+            <img src="../img/anello7.png" alt="ANELLO MAGIQUE">
+        </a>
+        <p>100,00€</p>
+    </div>
+
+    <div class="photo">
+        <div class="nome">ANELLO PRINCESS</div>
+        <a href="../pages/anelli_prod.html?nome=ANELLO%20PRINCESS&prezzo=175%2C00&img=../img/anello9.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20e%20zaffiro%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20princess.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.">
+            <img src="../img/anello9.jpg" alt="ANELLO PRINCESS">
+        </a>
+        <p>175,00€</p>
+    </div>
+
+    <!-- RIGA 4 -->
+    <div class="photo">
+        <div class="nome">ANELLO ESSENCE</div>
+        <a href="../pages/anelli_prod.html?nome=ANELLO%20ESSENCE&prezzo=120%2C00&img=../img/anello8.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20e%20rubino%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20essence%20elegante.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.">
+            <img src="../img/anello8.jpg" alt="ANELLO ESSENCE">
+        </a>
+        <p>120,00€</p>
+    </div>
+
+    <div class="photo">
+        <div class="nome">ANELLO DEEP RED</div>
+        <a href="../pages/anelli_prod.html?nome=ANELLO%20DEEP%20RED&prezzo=150%2C00&img=../img/anello8.png&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20e%20rubino%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20deep%20red.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.">
+            <img src="../img/anello8.png" alt="ANELLO DEEP RED">
+        </a>
+        <p>150,00€</p>
+    </div>
+
+    <div class="photo">
+        <div class="nome">ANELLO MEN</div>
+        <a href="../pages/anelli_prod.html?nome=ANELLO%20MEN&prezzo=50%2C00&img=../img/anello10.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20bianco%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20men%20oro%20bianco.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.">
+            <img src="../img/anello10.jpg" alt="ANELLO MEN">
+        </a>
+        <p>50,00€</p>
+    </div>
+
+    <div class="photo">
+        <div class="nome">ANELLO THIN MEN</div>
+        <a href="../pages/anelli_prod.html?nome=ANELLO%SPACE&prezzo=35%2C00&img=../img/anello11.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20bianco%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20thin%20men%20più%20sottile.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.">
+            <img src="../img/anello11.jpg" alt="ANELLO THIN MEN">
+        </a>
+        <p>35,00€</p>
+    </div>
+
+    <!-- RIGA 5 -->
+    <div class="photo">
+        <div class="nome">ANELLO SUPER MEN</div>
+        <a href="../pages/anelli_prod.html?nome=ANELLO%20SUPER%20MEN&prezzo=75%2C00&img=../img/anello12.png&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EAcciaio%20inox%20e%20diamante%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20super%20men.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.">
+            <img src="../img/anello12.png" alt="ANELLO SUPER MEN">
+        </a>
+        <p>75,00€</p>
+    </div>
+
+    <div class="photo">
+        <div class="nome">ANELLO TAKEN MEN</div>
+        <a href="../pages/anelli_prod.html?nome=ANELLO%20TAKEN%20MEN&prezzo=125%2C00&img=../img/anello13.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20e%20onice%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20taken%20men.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.">
+            <img src="../img/anello13.jpg" alt="ANELLO TAKEN MEN">
+        </a>
+        <p>125,00€</p>
+    </div>
+
+    <div class="photo">
+        <div class="nome">ANELLO RICH MEN</div>
+        <a href="../pages/anelli_prod.html?nome=ANELLO%20RICH%20MEN&prezzo=150%2C00&img=../img/anello14.jpg&desc=%3Cb%3EMateriale%3A%3C%2Fb%3EOro%20e%20diamanti%3Cbr%3E%3Cb%3EDescrizione%3A%3C%2Fb%3EAnello%20rich%20men.%3Cbr%3E%3Cb%3EConsegna%3A%3C%2Fb%3E3-5%20giorni.">
+            <img src="../img/anello14.jpg" alt="ANELLO RICH MEN">
+        </a>
+        <p>150,00€</p>
+    </div>
+
+</div>
+
+</body>
+</html>

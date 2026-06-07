@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orion's Source</title>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            margin: 0;
+            background-color: rgb(122, 212, 253);
+            background-image: url("img/bg1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center 1%;
+            background-attachment: fixed top;
+            font-family: "Times New Roman", serif;
+        }
+
+        body.hover {
+            background-color: rgb(156, 224, 255);
+        }
+
+        h1 {
+            margin: 50px 0;
+            text-align: center;
+            font-size: 90px;
+            color: #002b7f;
+            font-family: "Edwardian Script ITC";
+            text-shadow:
+            2px 2px 8px rgba(255,255,255,0.8), 0 0 20px rgba(255,255,255,0.5);
+        }
+
+        .title {
+            position: relative;
+            padding: 7px 0;
+            top: 35px;
+        }
+
+        .carrello {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-350%);
+        }
+
+        .banner {
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(8px);
+            padding: 18px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        .riga { 
+            display: flex;
+            justify-content: center;
+            gap: 130px;
+        }
+
+        .riga a {
+            color: #111;
+            font-size: 28px;
+            text-decoration: none;
+            transition: all .3s ease;
+            position: relative;
+        }
+
+        .riga a:hover {
+            color: darkblue;
+        }
+
+        .riga a::after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: darkblue;
+            transition: .3s;
+            transform: translateX(-50%);
+        }
+
+        .riga a:hover::after {
+            width: 100%;
+        }
+
+        .info {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-350%);
+        }
+
+        .info img, .carrello img {
+            transition: .3s ease;
+        }
+
+        .info img:hover,.carrello img:hover {
+            transform: scale(1.15);
+        }
+
+        .evidenza {
+            font-family: "Edwardian Script ITC";
+            font-size: 65px;
+            text-align: center;
+            color: #002b7f;
+            margin: 30px 0;
+        }
+
+        .gallery, .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px;
+            padding: 10px;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 10px;
+            transition: all .4s ease;
+        }
+
+        .container .video {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 0;
+            margin: 10px;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 30px rgba(0,0,0,.35);
+        }
+
+        .photo {
+            text-align: center;
+            background: rgba(255,255,255,0.65);
+            padding: 2px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            transition: .4s ease;
+        }
+
+        .photo:hover {
+            transform: translateY(-8px);
+        }
+
+        .photo p {
+            margin-top: 8px;
+            padding-top: 6px;
+            border-top: 1px solid black;
+            font-size: 20px;
+            color: black;
+        }
+
+        .container .video {
+            cursor: initial;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 420px;
+            height: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,.25);
+        }
+
+        .video:hover {
+            transform: scale(1.00);
+            box-shadow: 0 8px 20px black;
+        }
+
+    </style>
+    <body>
+    <div class="title">
+        <h1>Orion's Source</h1>
+    </div>
+
+    <div class="carrello">
+        <a href="pages/carrello.html" target="_blank">
+            <img src="img/market car.png" width="90" height="80">
+        </a>
+    </div>
+
+    <br>
+    <div class="banner">
+        <div class="riga">
+            <a href="pages/anelli.html" target="_blank">Anelli</a>
+            <a href="pages/bracciali.html" target="_blank">Bracciali</a>
+            <a href="pages/collane.html" target="_blank">Collane</a>
+            <a href="pages/orecchini.html" target="_blank">Orecchini</a>
+            <a href="pages/set.html" target="_blank">Set Completi</a>
+            <a href="pages/orologi.html" target="_blank">Orologi</a>
+        </div>
+    </div>
+
+    <div class="info">
+        <a href="pages/info.html" target="_blank">
+            <img src="img/moreinfo.png" width="90" height="80">
+        </a>
+    </div>
+
+    <div class="evidenza">
+        <p> I nostri originali:</p>
+    </div>
+
+    <div class="gallery">
+        <div class="photo">
+            <a href="pages/bracciali.html"><img src="img/bracciale13.jpg" alt="Smeraldo"></a>
+            <p>Smeraldo</p>
+        </div>
+
+        <div class="photo">
+            <a href="pages/orecchini.html"><img src="img/orecchini17.jpg" alt="Ear muff"></a>
+            <p>Ear muff</p>
+        </div>
+
+        <div class="photo">
+            <a href="pages/set.html"><img src="img/3gold.jpg" alt="Set completi"></a>
+            <p>Set completi</p>
+        </div>
+
+        <div class="photo">
+            <a href="pages/orecchini.html"><img src="img/4labradorite.png" alt="Labradorite"></a>
+            <p>Labradorite</p>
+        </div>
+    </div>
+
+    <div class="container">
+    <div class="photo">
+            <video class="video" autoplay loop muted oncontextmenu="return false;">
+                <source src="video/clock.mp4.mp4" type="video/mp4">
+            </video>
+        </a>
+        <p>Prodotti <a href="pages/limited_edition.html" target="_blank">LIMITED EDITION </a>disponibili
+            <br>entro il <b>06/06/2026</b></p>
+    </div>
+
+    <div class="photo">
+    <video class="video" autoplay loop muted>
+        <source src="video/anello.mp4" type="video/mp4">
+    </video>
+    <p>Dai un'occhiata alla nostra...</p>
+</div>
+
+    <div class="photo">
+            <video class="video" autoplay loop muted oncontextmenu="return false;">
+                <source src="video/anello_proposta.mp4" type="video/mp4">
+            </video>
+        </a>
+        <p>
+    <a href="pages/love_collection.html" target="_blank">
+        ...LOVE COLLECTION
+    </a>
+</p>
+</div>
+
+
+    <marquee>
+        <h4>
+            Tutte le immagini in questo sito sono prese da
+            <a href="https://pinterest.com/">Pinterest</a> o generate dall'AI.
+            Tutti i video sono presi da
+            <a href="https://pixabay.com">Pixabay</a>.
+        </h4>
+    </marquee>
+
+</body>
+</html>
